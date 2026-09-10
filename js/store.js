@@ -10,7 +10,7 @@ const Store = {
         { id: "p1", title: "Nairobi Night Campaign", description: "Urban cinematic stills", cover: "images/hero-nairobi.jpg", notes: "", created: Date.now() },
         { id: "p2", title: "Luxury Watch Launch", description: "Product stills", cover: "images/product-watch.jpg", notes: "", created: Date.now() }
       ],
-      currentProject: "p1", items: [], history: []
+      currentProject: "p1", items: [], history: [], credits: 3, plan: "trial"
     };
     localStorage.setItem(this.key, JSON.stringify(seed));
     return seed;
@@ -40,5 +40,7 @@ const Store = {
   },
   toggleFav(id) { const it = this.get(id); if (it) this.update(id, { favorite: !it.favorite }); },
   project(id) { return this.data().projects.find((p) => p.id === id); },
-  setCurrentProject(id) { const d = this.data(); d.currentProject = id; this.save(d); }
+  setCurrentProject(id) { const d = this.data(); d.currentProject = id; this.save(d); },
+  credits() { const d = this.data(); if (typeof d.credits !== "number") { d.credits = 3; this.save(d); } return d.credits; },
+  spendCredit() { const d = this.data(); if (typeof d.credits !== "number") d.credits = 3; if (d.credits < 1) return false; d.credits -= 1; this.save(d); return true; }
 };
