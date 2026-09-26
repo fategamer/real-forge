@@ -27,6 +27,7 @@
     .grid-3{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
     .tile{border:1px solid #2a2e36;border-radius:14px;overflow:hidden;background:#0c0e12}
     .tile img{width:100%;height:150px;object-fit:cover;display:block;background:#111}
+    .tile .ph{width:100%;height:150px;display:grid;place-items:center;font-size:12px;font-weight:700;letter-spacing:.08em;color:#8f949d}
     .tile span{display:block;padding:11px 13px;font-weight:600;font-size:14px}
     .grid-2{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:start}
     .card{border:1px solid #2a2e36;border-radius:14px;padding:20px;background:#0c0e12}
@@ -70,7 +71,13 @@
       </div>
     </div>
     <div class="hero-frame">
-      <img src="https://image.pollinations.ai/prompt/cinematic%20Nairobi%20night%20street%20photoreal%20neon%20reflections%20wet%20asphalt%20moody%20blue%20hour%20commercial%20look?width=960&height=720&nologo=true&model=flux&seed=42" alt="Nairobi night look-dev" loading="eager" />
+      <img
+        src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=960&h=720&q=80"
+        alt="Night city look-dev"
+        loading="eager"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"
+      />
+      <div class="ph" style="display:none;min-height:300px;background:linear-gradient(160deg,#0f1724,#07090d);place-items:center;color:#d6ff3f;font-weight:700;letter-spacing:.12em">NAIROBI NIGHT · LOOK DEV</div>
       <span class="tag">NAIROBI NIGHT · LOOK DEV</span>
     </div>
   </section>
@@ -82,27 +89,27 @@
     </div>
     <div class="grid-3">
       <figure class="tile">
-        <img src="https://image.pollinations.ai/prompt/cinematic%20Nairobi%20night%20city%20street%20photoreal%20neon%20wet%20road%20commercial%20still?width=640&height=400&nologo=true&model=flux&seed=42" alt="Nairobi night" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=640&h=400&q=80" alt="Nairobi night" loading="lazy" onerror="this.outerHTML='<div class=ph style=background:linear-gradient(145deg,#1a2230,#0a0e14)>NAIROBI NIGHT</div>'" />
         <span>Nairobi night</span>
       </figure>
       <figure class="tile">
-        <img src="https://image.pollinations.ai/prompt/editorial%20portrait%20of%20African%20creative%20woman%20at%20dusk%20photoreal%20cinematic%20skin%20detail?width=640&height=400&nologo=true&model=flux&seed=77" alt="Character" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=640&h=400&q=80" alt="Character" loading="lazy" onerror="this.outerHTML='<div class=ph style=background:linear-gradient(145deg,#2a1f28,#0e0a10)>CHARACTER</div>'" />
         <span>Character</span>
       </figure>
       <figure class="tile">
-        <img src="https://image.pollinations.ai/prompt/luxury%20watch%20product%20hero%20on%20dark%20stone%20studio%20light%20photoreal%20commercial?width=640&height=400&nologo=true&model=flux&seed=19" alt="Product" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=640&h=400&q=80" alt="Product" loading="lazy" onerror="this.outerHTML='<div class=ph style=background:linear-gradient(145deg,#1f2420,#0a0e0c)>PRODUCT</div>'" />
         <span>Product</span>
       </figure>
       <figure class="tile">
-        <img src="https://image.pollinations.ai/prompt/African%20savanna%20landscape%20after%20rain%20golden%20hour%20cinematic%20photoreal%20wide?width=640&height=400&nologo=true&model=flux&seed=55" alt="Environment" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=640&h=400&q=80" alt="Environment" loading="lazy" onerror="this.outerHTML='<div class=ph style=background:linear-gradient(145deg,#1a2420,#0a100e)>ENVIRONMENT</div>'" />
         <span>Environment</span>
       </figure>
       <figure class="tile">
-        <img src="https://image.pollinations.ai/prompt/luxury%20car%20in%20neon%20tunnel%20wet%20asphalt%20commercial%20photoreal%20cinematic?width=640&height=400&nologo=true&model=flux&seed=31" alt="Commercial" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=640&h=400&q=80" alt="Commercial" loading="lazy" onerror="this.outerHTML='<div class=ph style=background:linear-gradient(145deg,#241e1a,#100c0a)>COMMERCIAL</div>'" />
         <span>Commercial</span>
       </figure>
       <figure class="tile">
-        <img src="https://image.pollinations.ai/prompt/modern%20film%20studio%20bay%20with%20soft%20lights%20and%20camera%20equipment%20photoreal?width=640&height=400&nologo=true&model=flux&seed=88" alt="Studio" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=640&h=400&q=80" alt="Studio" loading="lazy" onerror="this.outerHTML='<div class=ph style=background:linear-gradient(145deg,#1c1c24,#0c0c12)>STUDIO</div>'" />
         <span>Studio</span>
       </figure>
     </div>
