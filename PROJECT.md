@@ -1,15 +1,14 @@
 # REAL FORGE
 
-**Project Type:** AI Creative Production Studio (Static / Client-side)
+**Independent project** — AI Creative Production Studio
 
-**GitHub:** https://github.com/fategamer/real-forge  
-**Vercel Project Name:** real-forge  
-**Live:** https://real-forge.vercel.app
+- GitHub: https://github.com/fategamer/real-forge
+- Vercel project name should be: `real-forge`
+- Must be connected only to this repository
 
-This project is completely independent from fate_quant.
+## Status
+Landing page fixed and working.
+Missing gallery images replaced with clean placeholders until real assets are added.
 
-## How to keep it separate on Vercel
-1. Go to the real-forge project on Vercel → Settings → Git
-2. Disconnect the current repository (if it shows fate_quant)
-3. Connect the correct repository: fategamer/real-forge
-4. Redeploy
+## Deploy
+After connecting the correct Git repo on Vercel, the site will serve index.html correctly.
