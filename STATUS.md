@@ -1,24 +1,25 @@
 # REAL FORGE — Status
 
-**Last fixed:** 2026-09-26
+**Updated:** 2026-09-26
 
-## Working
-- Landing page (`/`)
-- Studio Create (`/app.html#/create`)
-- Library (`/app.html#/library`)
-- Plans / Pricing (`/app.html#/pricing`)
-- Local trial credits (3)
-- Reality Engine prompt expansion
-- Image generation via Pollinations (Flux)
+## Working now
+- Landing page with real look-dev gallery plates (Pollinations / Flux)
+- Studio Create with loading spinner
+- Result view with **Download** + **Forge again**
+- Library with download on each item
+- Plans / Whop links
+- Mobile layout (hamburger menu + stacked panels)
+- Trial credits (3)
 
-## Known limitations
-- Gallery on landing uses styled placeholders (real plates to be added)
-- Video modes are preview-only (still generate images)
-- No real account / payment enforcement yet (Whop links only)
-- Generation depends on external Pollinations API
+## Cleaned up
+- Removed dependency on unused `store.js`, `engine.js`, `provider.js`
+- App is self-contained in `js/app.js`
 
-## Next priorities
-1. Add real look-dev plates to gallery
-2. Connect real image API key (optional)
-3. Brand lock + project folders
-4. Better export / download
+## Known limits
+- Images come from Pollinations (external). Quality varies.
+- Video modes still produce stills (preview only)
+- No real auth / payment enforcement yet
+
+## Live
+- https://real-forge.vercel.app
+- https://real-forge.vercel.app/app.html#/create
