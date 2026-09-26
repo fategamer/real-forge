@@ -6,47 +6,50 @@
   <title>REAL FORGE — Forge Reality</title>
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .landing-nav { display:flex; justify-content:space-between; align-items:center; padding:16px 24px; border-bottom:1px solid #2a2e36; }
-    .logo { font-weight:700; letter-spacing:.12em; display:flex; align-items:center; gap:10px; }
-    .logo-mark { width:28px; height:28px; background:#d6ff3f; color:#111; display:grid; place-items:center; border-radius:8px; font-weight:800; }
-    .lnav { display:flex; gap:20px; }
-    .lnav a { color:#8f949d; font-weight:600; }
-    .hero { min-height:78vh; display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center; padding:6vh 7vw; }
-    .kicker { color:#d6ff3f; letter-spacing:.18em; font-size:12px; font-weight:700; text-transform:uppercase; }
-    h1 { font-size:clamp(48px,7.5vw,86px); line-height:.9; margin:12px 0 16px; letter-spacing:-.03em; }
-    .hero p { color:#8f949d; max-width:420px; line-height:1.5; }
-    .hero-actions { display:flex; gap:10px; margin-top:28px; flex-wrap:wrap; }
-    .btn { display:inline-flex; padding:12px 18px; border-radius:12px; border:1px solid #2a2e36; background:#171a21; color:#f4f4f0; font-weight:650; }
-    .btn-accent { background:#d6ff3f; color:#111; border:0; }
-    .btn-ghost { background:transparent; }
-    .hero-frame { border:1px solid #2a2e36; border-radius:20px; overflow:hidden; background:#0a0c10; min-height:320px; display:grid; place-items:center; }
-    .hero-frame img { width:100%; height:100%; object-fit:cover; }
-    .section { padding:70px 7vw; border-top:1px solid #2a2e36; }
-    .section-h { margin-bottom:28px; }
-    .section-h h2 { font-size:32px; margin-bottom:8px; }
-    .section-h p { color:#8f949d; }
-    .grid-3 { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
-    .tile { border:1px solid #2a2e36; border-radius:16px; overflow:hidden; background:#0c0e12; }
-    .tile .ph { height:140px; background:linear-gradient(135deg,#141820,#0a0c10); display:grid; place-items:center; color:#8f949d; font-size:13px; }
-    .tile span { display:block; padding:12px 14px; font-weight:600; }
-    .grid-2 { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:start; }
-    .card { border:1px solid #2a2e36; border-radius:16px; padding:22px; background:#0c0e12; }
-    .price-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-    .price { border:1px solid #2a2e36; border-radius:16px; padding:22px; text-align:center; }
-    .price.feat { border-color:#d6ff3f; }
-    .amt { font-size:36px; font-weight:800; margin:12px 0 18px; }
-    .final { text-align:center; padding:80px 7vw; border-top:1px solid #2a2e36; }
-    .final h2 { font-size:42px; margin-bottom:20px; }
-    footer { display:flex; justify-content:space-between; padding:20px 7vw; border-top:1px solid #2a2e36; color:#8f949d; font-size:13px; }
-    @media (max-width:900px) {
-      .hero, .grid-2, .price-grid { grid-template-columns:1fr; }
-      .lnav { display:none; }
-    }
+    .landing-nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1px solid #2a2e36}
+    .logo{font-weight:700;letter-spacing:.12em;display:flex;align-items:center;gap:10px}
+    .logo-mark{width:28px;height:28px;background:#d6ff3f;color:#111;display:grid;place-items:center;border-radius:8px;font-weight:800}
+    .lnav{display:flex;gap:20px}
+    .lnav a{color:#8f949d;font-weight:600}
+    .hero{min-height:78vh;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:6vh 7vw}
+    .kicker{color:#d6ff3f;letter-spacing:.18em;font-size:12px;font-weight:700;text-transform:uppercase}
+    h1{font-size:clamp(48px,7.5vw,86px);line-height:.9;margin:12px 0 16px;letter-spacing:-.03em}
+    .hero p{color:#8f949d;max-width:420px;line-height:1.5}
+    .hero-actions{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+    .btn{display:inline-flex;padding:12px 18px;border-radius:12px;border:1px solid #2a2e36;background:#171a21;color:#f4f4f0;font-weight:650;cursor:pointer}
+    .btn-accent{background:#d6ff3f;color:#111;border:0}
+    .btn-ghost{background:transparent}
+    .hero-frame{border:1px solid #2a2e36;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#0f141c 0%,#07090d 60%,#0a1018 100%);min-height:340px;display:grid;place-items:end start;padding:24px;position:relative}
+    .hero-frame span{color:#d6ff3f;font-size:12px;letter-spacing:.16em;font-weight:700}
+    .section{padding:70px 7vw;border-top:1px solid #2a2e36}
+    .section-h{margin-bottom:28px}
+    .section-h h2{font-size:32px;margin-bottom:8px}
+    .section-h p{color:#8f949d}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+    .tile{border:1px solid #2a2e36;border-radius:16px;overflow:hidden;background:#0c0e12}
+    .tile .ph{height:150px;display:grid;place-items:center;font-size:13px;font-weight:600;letter-spacing:.04em;color:#8f949d}
+    .tile .ph.nairobi{background:linear-gradient(145deg,#1a2230,#0a0e14)}
+    .tile .ph.character{background:linear-gradient(145deg,#2a1f28,#0e0a10)}
+    .tile .ph.product{background:linear-gradient(145deg,#1f2420,#0a0e0c)}
+    .tile .ph.env{background:linear-gradient(145deg,#1a2420,#0a100e)}
+    .tile .ph.commercial{background:linear-gradient(145deg,#241e1a,#100c0a)}
+    .tile .ph.studio{background:linear-gradient(145deg,#1c1c24,#0c0c12)}
+    .tile span{display:block;padding:12px 14px;font-weight:600}
+    .grid-2{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:start}
+    .card{border:1px solid #2a2e36;border-radius:16px;padding:22px;background:#0c0e12}
+    .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .price{border:1px solid #2a2e36;border-radius:16px;padding:22px;text-align:center}
+    .price.feat{border-color:#d6ff3f}
+    .amt{font-size:36px;font-weight:800;margin:12px 0 18px}
+    .final{text-align:center;padding:80px 7vw;border-top:1px solid #2a2e36}
+    .final h2{font-size:42px;margin-bottom:20px}
+    footer{display:flex;justify-content:space-between;padding:20px 7vw;border-top:1px solid #2a2e36;color:#8f949d;font-size:13px}
+    @media (max-width:900px){.hero,.grid-2,.price-grid{grid-template-columns:1fr}.lnav{display:none}}
   </style>
 </head>
 <body>
   <header class="landing-nav">
-    <a class="logo" href="index.html"><span class="logo-mark">R</span> REAL FORGE</a>
+    <a class="logo" href="/"><span class="logo-mark">R</span> REAL FORGE</a>
     <nav class="lnav">
       <a href="#gallery">Gallery</a>
       <a href="#engine">Engines</a>
@@ -54,8 +57,8 @@
       <a href="https://whop.com/real-forge" target="_blank" rel="noopener">Whop</a>
     </nav>
     <div>
-      <a class="btn btn-ghost" href="app.html#/studio">Explore Studio</a>
-      <a class="btn btn-accent" href="app.html#/create">Start Forging</a>
+      <a class="btn btn-ghost" href="/app.html#/create">Explore Studio</a>
+      <a class="btn btn-accent" href="/app.html#/create">Start Forging</a>
     </div>
   </header>
 
@@ -65,12 +68,12 @@
       <h1>FORGE<br>REALITY.</h1>
       <p>One sentence. A photoreal still you can sell, post, or pitch.</p>
       <div class="hero-actions">
-        <a class="btn btn-accent" href="app.html#/create">Start Forging</a>
-        <a class="btn" href="app.html#/studio">Explore Studio</a>
+        <a class="btn btn-accent" href="/app.html#/create">Start Forging</a>
+        <a class="btn" href="/app.html#/create">Explore Studio</a>
       </div>
     </div>
     <div class="hero-frame">
-      <img src="images/hero-nairobi.svg" alt="REAL FORGE plate" />
+      <span>NAIROBI NIGHT · LOOK DEV</span>
     </div>
   </section>
 
@@ -80,12 +83,12 @@
       <p>Look-development stills that define the REAL FORGE standard.</p>
     </div>
     <div class="grid-3">
-      <figure class="tile"><div class="ph">Nairobi Night</div><span>Nairobi night</span></figure>
-      <figure class="tile"><div class="ph">Character</div><span>Character</span></figure>
-      <figure class="tile"><div class="ph">Product</div><span>Product</span></figure>
-      <figure class="tile"><div class="ph">Environment</div><span>Environment</span></figure>
-      <figure class="tile"><div class="ph">Commercial</div><span>Commercial</span></figure>
-      <figure class="tile"><div class="ph">Studio</div><span>Studio</span></figure>
+      <figure class="tile"><div class="ph nairobi">NAIROBI NIGHT</div><span>Nairobi night</span></figure>
+      <figure class="tile"><div class="ph character">CHARACTER</div><span>Character</span></figure>
+      <figure class="tile"><div class="ph product">PRODUCT</div><span>Product</span></figure>
+      <figure class="tile"><div class="ph env">ENVIRONMENT</div><span>Environment</span></figure>
+      <figure class="tile"><div class="ph commercial">COMMERCIAL</div><span>Commercial</span></figure>
+      <figure class="tile"><div class="ph studio">STUDIO</div><span>Studio</span></figure>
     </div>
   </section>
 
@@ -113,7 +116,7 @@
 
   <section class="final">
     <h2>Start forging.</h2>
-    <a class="btn btn-accent" href="app.html#/create">Start Forging</a>
+    <a class="btn btn-accent" href="/app.html#/create">Start Forging</a>
   </section>
 
   <footer>
